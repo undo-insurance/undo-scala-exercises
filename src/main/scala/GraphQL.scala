@@ -32,7 +32,7 @@ object GraphQL {
                   "/ws/graphql" -> CORS(
                     Http4sAdapter.makeWebSocketService(interpreter)
                   ),
-                  "/playground" -> Kleisli.liftF(
+                  "/" -> Kleisli.liftF(
                     StaticFile.fromResource("/playground.html", blocker, None)
                   )
                 ).orNotFound
