@@ -11,6 +11,7 @@ libraryDependencies ++= Seq(
   "dev.zio" %% "zio" % zioVersion,
   "dev.zio" %% "zio-streams" % zioVersion,
   "dev.zio" %% "zio-interop-cats" % "2.2.0.1",
+  "dev.zio" %% "zio-query" % "0.2.0",
   "org.typelevel" %% "cats-effect" % "2.2.0",
   "org.typelevel" %% "cats-core" % "2.2.0",
   "org.tpolecat" %% "doobie-core"      % doobieVersion,
